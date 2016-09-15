@@ -1,0 +1,190 @@
+/* Cross Browser Compatability CSS */
+/**
+* html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+* v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+* html5doctor.com/html-5-reset-stylesheet/
+*/
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+ margin: 0;
+ padding: 0;
+ border: 0;
+ font-size: 100%;
+ font: inherit;
+ vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+ display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+
+
+/* Write your CSS styles here */
+
+
+.maincontent {
+  background: url("http://i1308.photobucket.com/albums/s602/lysautumn/industrial_zpsj85uumye.jpg") no-repeat fixed center center / cover;
+  display: none;
+}
+
+/*Fonts, etc*/
+
+#hello, h3 {
+  font-family: 'Grand Hotel', cursive;
+  color: #cc5200;
+}
+#name, h4 {
+  font-family: 'Vollkorn', serif;
+}
+
+p, ul, ol {
+  font-family: 'Source Sans Pro', sans-serif;
+  color: #0d0d0d;
+  font-size: 16px;
+}
+
+h3 {
+  font-size: 30px;
+  text-align: center;
+  line-height: 300%;
+  color: #cc5200;
+}
+
+h4 {
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  color: #0d0d0d;
+}
+
+#hello {
+  font-size: 120px;
+  margin-left: 15px;
+}
+
+#name {
+  font-size: 60px;
+  line-height: 5%;
+  text-align: center;
+}
+
+.employ, .education {
+  font-weight: bold;
+}
+
+a {
+  font-weight: bolder;
+  color: #0d0d0d;
+}
+
+ul, ol {
+  list-style-type: none;
+}
+
+/*Layout*/
+#button {
+  text-align: center;
+}
+
+.view {
+  background-color: #cc5200;
+  color: white;
+  font-family: 'Grand Hotel', cursive;
+  font-size: 60px;
+  height: 100px;
+  width: 300px;
+  border-radius: 25px;
+  margin: 100px ;
+}
+
+#main {
+  display: flex;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 15px;
+}
+
+#about {
+  background-color: #d9d9d9;
+  padding-right: 75px;
+  flex-grow: 1;
+}
+
+aside {
+  background-color: #cc5200;
+  flex-shrink: 0;
+  width: 400px;
+  border-top-right-radius: 130px;
+}
+
+#work, #sidebar-info {
+  padding: 5px 15px 15px 15px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 130px;
+  margin-top: 55px;
+  margin-bottom: 5px;
+}
+
+#contact-list {
+  text-align: center;
+}
+.contact {
+  display: inline-block;
+  padding: 10px;
+}
+
+#skills-list {
+  padding: 15px 0px 15px 40px;
+  font-weight: bold;
+}
+
+.description {
+  list-style-type: circle;
+  padding-left: 40px;
+}
+
+.sidebar-headers {
+  padding-top: 25px;
+}
+
+@media all and (max-width: 800px) {
+  #wrapper {
+    flex-flow: column;
+  }
+  #about {
+    width: auto;
+  }
+}
